@@ -1,6 +1,4 @@
 import time
-import os
-os.chdir(r"/var/www/html")
 
 infini = 0
 prog = 0
@@ -42,7 +40,7 @@ while infini != 1:
         
         print (operateur, ";",affaire, ";",etat, ";",codeArticle, ";",nombreB, ";",time.strftime("%d/%m/%Y;%H:%M:%S"))
         data = operateur + ";" + affaire + ";" + etat + ";" + codeArticle + ";" + nombreB + ";" + time.strftime("%d/%m/%Y;%H:%M:%S"+"\n")
-        fichierData = open("data.csv", "a")
+        fichierData = open("/var/www/html/data.csv", "a")
         fichierData.write(data)
         fichierData.close()
 
