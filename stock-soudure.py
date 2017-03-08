@@ -1,6 +1,6 @@
 import time
-#import os
-#os.chdir(r"C:\Users\matthieupradeau.ATEMCO\Desktop\Documentations\Excel\Code Barre\data")
+import os
+os.chdir(r"/var/www/html")
 
 infini = 0
 prog = 0
